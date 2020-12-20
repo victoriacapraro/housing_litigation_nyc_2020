@@ -1,0 +1,35 @@
+HTML CSSResult EDIT ON .grid {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-gap: 1em;
+}
+
+img {
+    max-width: 75%;
+    height: auto;
+}
+
+header, footer {
+    grid-column: 1 / 4;
+}
+
+article {
+    grid-column: 1 / 4;
+    background: pink;
+}
+
+body {
+    margin: 5% auto;
+    max-width: 56em;
+    padding: 1em 0;
+    font-family: Helvetica;
+}
+
+header,
+article,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
